@@ -1,0 +1,70 @@
+@import "_variables";
+
+body {
+    font-family: $primary-font;
+    background-color: $light;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: $secondary-font;
+}
+
+.container {
+    width: 60%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    background: $dark;
+    color: $white;
+    min-height: 70px;
+}
+
+footer {
+    padding: 20px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.is-primary {
+    color: $primary-color;
+}
+
+.logo-header{
+    font-size: 48px;
+}
+
+.main {
+}
+
+.section-header {
+    margin-left: $sidebar-width;
+}
+
+.cv-item-container {
+}
+
+.cv-item-content {
+    margin-left: $sidebar-width;
+}
+
+.cv-item-header {
+    margin-left: $sidebar-width;
+    color: $primary-color;
+}
+
+.cv-item-sidebar {
+    float: left;
+    width: $sidebar-width;
+}
+
+.cv-item-date {
+    font-style: italic;
+    margin: 0;
+    padding: 0;
+}
+
+.cv-item-keywords {
+    color: lighten($black, 50%);
+}

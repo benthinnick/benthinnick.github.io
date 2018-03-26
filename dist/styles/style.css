@@ -1,0 +1,49 @@
+body {
+  font-family: "El Messiri", serif;
+  background-color: whitesmoke; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Cuprum", sans-serif; }
+
+.container {
+  width: 60%;
+  margin: auto;
+  overflow: hidden; }
+
+header {
+  background: #363636;
+  color: #ffffff;
+  min-height: 70px; }
+
+footer {
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center; }
+
+.is-primary {
+  color: #4e8450; }
+
+.logo-header {
+  font-size: 48px; }
+
+.section-header {
+  margin-left: 200px; }
+
+.cv-item-content {
+  margin-left: 200px; }
+
+.cv-item-header {
+  margin-left: 200px;
+  color: #4e8450; }
+
+.cv-item-sidebar {
+  float: left;
+  width: 200px; }
+
+.cv-item-date {
+  font-style: italic;
+  margin: 0;
+  padding: 0; }
+
+.cv-item-keywords {
+  color: gray; }

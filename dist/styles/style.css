@@ -11,9 +11,10 @@ h1, h2, h3, h4, h5, h6 {
   overflow: hidden; }
 
 header {
-  background: #363636;
-  color: #ffffff;
   min-height: 70px; }
+  header .container {
+    border-bottom: 1px solid #dbdbdb;
+    text-align: center; }
 
 footer {
   padding: 20px;
@@ -24,7 +25,12 @@ footer {
   color: #4e8450; }
 
 .logo-header {
-  font-size: 48px; }
+  font-size: 48px;
+  margin-bottom: 10px; }
+
+.logo-subheader {
+  margin: 5px;
+  font-size: 24px; }
 
 .section-header {
   margin-left: 200px; }

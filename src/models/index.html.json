@@ -2,7 +2,11 @@
     "author": {
         "firstName": "Aben",
         "lastName": "Ayazbayev",
-        "email": "aayazbayev93@gmail.com"
+        "email": "aayazbayev93@gmail.com",
+        "github": "benthinnick",
+        "skype": "benthinnick",
+        "pdf_link_en": "/pdf/AbenAyazbayev_en.pdf",
+        "pdf_link_ru": "/pdf/AbenAyazbayev_ru.pdf"
     },
     "keySkills": {
         "skills": [],
@@ -12,7 +16,7 @@
         {
             "name": "PieShop",
             "content": "A fictional pie shop web-application, based on two Pluralsight courses, built upon ASP .NET Core 2.0 MVC framework. Allows ordering pies, leaving reviews, allows multiple roles including administrative roles. I used Entity Framework Core for mapping entities to database. Postgres as database, Serilog as a logger, JQuery for the client-side, internal model-binding, authorization, caching, xUnit for tests.",
-            "keywords": "ASP .NET Core 2 MVC, Identity, EntityFramework, JQuery",
+            "keywords": "ASP .NET Core 2 MVC, Identity, EntityFramework Core, Javascript, JQuery, Gulp, Postgres, HTML5, CSS3",
             "startDate": "2018-03-05T18:25:43.511Z",
             "endDate": "2018-03-22T18:25:43.511Z",
             "githubLink": "https://github.com/benthinnick/PieShop",
@@ -33,14 +37,13 @@
             "keywords": "WildFly, Java EE, JQuery, Backbone, Underscore",
             "startDate": "2017-10-15T00:00:00.000Z",
             "endDate": "2018-11-15T00:00:00.000Z",
-            "githubLink": "",
+            "githubLink": "https://github.com/benthinnick/ticket-monster",
             "link": ""
         }
     ],
     "education": [
         {
-            "degree":
-            {
+            "degree": {
                 "name": "Bachelor of Arts in International Relations",
                 "place": "L. N. Gumilyov Eurasian National University",
                 "startDate": "2013-10-01T00:00:00.000Z",
@@ -48,5 +51,5 @@
             }
         }
     ],
-    "hobbies": [ "3D Modelling"]
+    "hobbies": "Literature, 3D modelling (Blender)"
 }

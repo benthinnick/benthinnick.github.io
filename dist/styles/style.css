@@ -10,8 +10,15 @@ h5,
 h6 {
   font-family: "Cuprum", sans-serif; }
 
+a {
+  color: #4e8450; }
+  a:visited {
+    color: #3b643d; }
+  a:hover {
+    color: #62a365; }
+
 .container {
-  width: 60%;
+  width: 70%;
   margin: auto;
   overflow: hidden; }
 
@@ -41,7 +48,8 @@ footer {
   margin-left: 200px; }
 
 .cv-item-content {
-  margin-left: 200px; }
+  margin-left: 200px;
+  text-align: justify; }
 
 .cv-item-header {
   margin-left: 200px;
@@ -63,3 +71,23 @@ footer {
   content: "";
   clear: both;
   display: table; }
+
+.logo-subheader a {
+  text-decoration: none; }
+
+.lang-selector {
+  float: right;
+  margin-top: 5px; }
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%; }
+  .cv-item-sidebar {
+    float: none;
+    width: 100%; }
+  .cv-item-content {
+    margin-left: 0; }
+  .cv-item-header {
+    margin-left: 0; }
+  .section-header {
+    margin-left: 0; } }

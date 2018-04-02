@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
+{% set fullName = author.firstName + " " + author.lastName %}
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A resume of the full-stack web-developer">
-    <meta name="author" content="{{ author.firstName }}">
+    <meta name="author" content="{{ fullName }}">
 
-    <title>{{ author.firstName }} - CV</title>
+    <title>{{ fullName }} - CV</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
         crossorigin="anonymous">
@@ -28,33 +29,48 @@
 
     <header>
         <div class="container">
+            <div class="lang-selector">
+                <a href="/index.html">EN</a> | RU
+            </div>
             <h1 class="logo-header">
-                <span class="is-primary">A</span>ben
-                <span class="is-primary">A</span>yazbayev
+                <span class="is-primary">А</span>бен
+                <span class="is-primary">А</span>язбаев
             </h1>
-            <p class="logo-subheader">
-                <span class="fab fa-github"></span>
-                <span class="fab fa-skype"></span>
-                <span class="fas fa-at"></span>
-            </p>
+            <div>
+                <p class="logo-subheader">
+                    <a href="https://github.com/{{author.github}}" class="fab fa-github"></a>
+                    <a href="skype:{{author.skype}}" class="fab fa-skype"></a>
+                    <a href="mailto:{{author.email}}" class="fas fa-at"></a>
+                    <a href="{{author.pdf_link_ru}}" class="fas fa-file-pdf"></a>
+                </p>
+            </div>
         </div>
     </header>
 
     <section>
         <div class="container main">
-            <h1 class="section-header">Projects</h1>
+            <h1 class="section-header">Проекты</h1>
 
             {% for x in projects %}
 
             <article class="cv-item-container clearfix">
+                {% if !!x.link.length %}
+                <a href="{{x.link}}">
+                    <h2 class="cv-item-header">{{x.name}}</h2>
+                </a>
+                {% else %}
                 <h2 class="cv-item-header">{{x.name}}</h2>
-
+                {% endif %}
                 <aside class="cv-item-sidebar">
-                    <p class="cv-item-date">2018 Feb - Mar</p>
+                    <p class="cv-item-date">{{x.startDate|date("M, Y")}} - {{x.endDate|date("M, Y")}}</p>
                     <p class="cv-item-keywords">{{x.keywords}}</p>
                 </aside>
 
                 <section class="cv-item-content">
+                    <p>
+                        <strong>Sources:</strong>
+                        <a href={{x.githubLink}}>{{x.githubLink}}</a>
+                    </p>
                     <p>
                         {{x.content}}
                     </p>
@@ -63,43 +79,33 @@
 
             {% endfor %}
 
-            <h1 class="section-header">Education</h1>
+            <h1 class="section-header">Образование</h1>
+
+            {% for y in education %}
 
             <article class="cv-item-container clearfix">
 
-                <h2 class="cv-item-header">University</h2>
+                <h2 class="cv-item-header">{{y.degree.name}}</h2>
 
                 <aside class="cv-item-sidebar">
-                    <p class="cv-item-date">2018 Feb - Mar</p>
-                    <p class="cv-item-keywords">.NET, ASP.NET Core</p>
+                    <p class="cv-item-date">{{y.degree.startDate|date("Y")}} - {{y.degree.endDate|date("Y")}}</p>
                 </aside>
 
                 <section class="cv-item-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula
-                        tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem
-                        vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend,
-                        lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est
-                        at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse
-                        quis libero molestie, sollicitudin ex ac, hendrerit leo.
+                        {{y.degree.place}}
                     </p>
                 </section>
             </article>
 
-            <h1 class="section-header">Hobbies</h1>
+            {% endfor %}
+
+            <h1 class="section-header">Хобби</h1>
 
             <article class="cv-item-container">
-
                 <section class="cv-item-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula
-                        tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem
-                        vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend,
-                        lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est
-                        at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse
-                        quis libero molestie, sollicitudin ex ac, hendrerit leo.
+                        {{hobbies}}
                     </p>
                 </section>
             </article>
@@ -108,7 +114,7 @@
 
     <footer>
         <div class="container">
-            <p>Copyright 2018</p>
+            <p>{{fullName}}, Copyright 2018</p>
         </div>
     </footer>
 

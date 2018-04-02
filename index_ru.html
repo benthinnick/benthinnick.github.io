@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="ru">
 
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A resume of the full-stack web-developer">
-    <meta name="author" content="Aben">
+    <meta name="author" content="Абен Аязбаев">
 
-    <title>Aben - CV</title>
+    <title>Абен Аязбаев - CV</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
         crossorigin="anonymous">
@@ -28,35 +29,70 @@
 
     <header>
         <div class="container">
+            <div class="lang-selector">
+                <a href="/index.html">EN</a> | RU
+            </div>
             <h1 class="logo-header">
-                <span class="is-primary">A</span>ben
-                <span class="is-primary">A</span>yazbayev
+                <span class="is-primary">А</span>бен
+                <span class="is-primary">А</span>язбаев
             </h1>
-            <p class="logo-subheader">
-                <span class="fab fa-github"></span>
-                <span class="fab fa-skype"></span>
-                <span class="fas fa-at"></span>
-            </p>
+            <div>
+                <p class="logo-subheader">
+                    <a href="https://github.com/benthinnick" class="fab fa-github"></a>
+                    <a href="skype:benthinnick" class="fab fa-skype"></a>
+                    <a href="mailto:aayazbayev93@gmail.com" class="fas fa-at"></a>
+                    <a href="/pdf/AbenAyazbayev_ru.pdf" class="fas fa-file-pdf"></a>
+                </p>
+            </div>
         </div>
     </header>
 
     <section>
         <div class="container main">
-            <h1 class="section-header">Projects</h1>
+            <h1 class="section-header">Проекты</h1>
 
             
 
             <article class="cv-item-container clearfix">
+                
+                <a href="http://pieshop.aben.space/">
+                    <h2 class="cv-item-header">PieShop</h2>
+                </a>
+                
+                <aside class="cv-item-sidebar">
+                    <p class="cv-item-date">Mar, 2018 - Mar, 2018</p>
+                    <p class="cv-item-keywords">ASP .NET Core 2 MVC, Identity, EntityFramework Core, Javascript, JQuery, Gulp, Postgres, HTML5, CSS3</p>
+                </aside>
+
+                <section class="cv-item-content">
+                    <p>
+                        <strong>Sources:</strong>
+                        <a href=https://github.com/benthinnick/PieShop>https://github.com/benthinnick/PieShop</a>
+                    </p>
+                    <p>
+                        Веб-приложение вымышленной пекарни, сделано на основе двух курсов Pluralsight. Построено на фреймворке ASP .NET Core 2.0 MVC. Приложение дает возможность заказывать пироги, оставлять рецензии, имеет разделение пользователей по ролям (администратор, пользователь). Использовал Entity Framework Core для связи сущностей с базой данных. Postgres для баз данных, Serilog как логгер, JQuery для client-side, xUnit для тестов и сам фреймворк для валидации моделей, кэширования и ауторизации.
+                    </p>
+                </section>
+            </article>
+
+            
+
+            <article class="cv-item-container clearfix">
+                
                 <h2 class="cv-item-header">MonopolyBot</h2>
-
+                
                 <aside class="cv-item-sidebar">
-                    <p class="cv-item-date">2018 Feb - Mar</p>
-                    <p class="cv-item-keywords">keywords</p>
+                    <p class="cv-item-date">Feb, 2018 - Mar, 2018</p>
+                    <p class="cv-item-keywords">.NET Core 2, Autofac, Telegram.Bot</p>
                 </aside>
 
                 <section class="cv-item-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend, lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse quis libero molestie, sollicitudin ex ac, hendrerit leo.
+                        <strong>Sources:</strong>
+                        <a href=https://github.com/benthinnick/mpoly>https://github.com/benthinnick/mpoly</a>
+                    </p>
+                    <p>
+                        Бот для платформы Telegram, написанный на C# с помощью библиотеки Telegram.Bot, позволяет играть «Монополию» в чате Telegram. Для рендеринга игры использовал библиотеку ImageSharp. Также использованы: Autofac для инверсии управления, NUnit для тестов, NLog как  логгер.
                     </p>
                 </section>
             </article>
@@ -64,59 +100,54 @@
             
 
             <article class="cv-item-container clearfix">
-                <h2 class="cv-item-header"></h2>
-
+                
+                <h2 class="cv-item-header">Ticket-Monster</h2>
+                
                 <aside class="cv-item-sidebar">
-                    <p class="cv-item-date">2018 Feb - Mar</p>
-                    <p class="cv-item-keywords"></p>
+                    <p class="cv-item-date">Oct, 2017 - Nov, 2018</p>
+                    <p class="cv-item-keywords">WildFly, Java EE, JQuery, Backbone, Underscore</p>
                 </aside>
 
                 <section class="cv-item-content">
                     <p>
-                        
+                        <strong>Sources:</strong>
+                        <a href=https://github.com/benthinnick/ticket-monster>https://github.com/benthinnick/ticket-monster</a>
+                    </p>
+                    <p>
+                        Single-Page Java веб-приложение на WildFly, использовал Hibernate, Maven, Backbone.js, JQuery, Underscore.
                     </p>
                 </section>
             </article>
 
             
 
-            <h1 class="section-header">Education</h1>
+            <h1 class="section-header">Образование</h1>
+
+            
 
             <article class="cv-item-container clearfix">
 
-                <h2 class="cv-item-header">University</h2>
+                <h2 class="cv-item-header">Бакалавр международных знаний</h2>
 
                 <aside class="cv-item-sidebar">
-                    <p class="cv-item-date">2018 Feb - Mar</p>
-                    <p class="cv-item-keywords">.NET, ASP.NET Core</p>
+                    <p class="cv-item-date">2013 - 2017</p>
                 </aside>
 
                 <section class="cv-item-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula
-                        tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem
-                        vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend,
-                        lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est
-                        at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse
-                        quis libero molestie, sollicitudin ex ac, hendrerit leo.
+                        Евразийский Национальный Университет им. Л. Н. Гумилева
                     </p>
                 </section>
             </article>
 
-            <h1 class="section-header">Hobbies</h1>
+            
+
+            <h1 class="section-header">Хобби</h1>
 
             <article class="cv-item-container">
-
                 <section class="cv-item-content">
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula
-                        tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem
-                        vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend,
-                        lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est
-                        at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames
-                        ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse
-                        quis libero molestie, sollicitudin ex ac, hendrerit leo.
+                        Литература, 3D Моделирование (Blender)
                     </p>
                 </section>
             </article>
@@ -125,7 +156,7 @@
 
     <footer>
         <div class="container">
-            <p>Copyright 2018</p>
+            <p>Абен Аязбаев, Copyright 2018</p>
         </div>
     </footer>
 

@@ -1,13 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
+{% set fullName = author.firstName + " " + author.lastName %}
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="description" content="A resume of the full-stack web-developer">
-    <meta name="author" content="{{ author.firstName }}">
+    <meta name="author" content="{{ fullName }}">
 
-    <title>{{ author.firstName }} - CV</title>
+    <title>{{ fullName }} - CV</title>
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.8/css/solid.css" integrity="sha384-v2Tw72dyUXeU3y4aM2Y0tBJQkGfplr39mxZqlTBDUZAb9BGoC40+rdFCG0m10lXk"
         crossorigin="anonymous">
@@ -28,15 +29,22 @@
 
     <header>
         <div class="container">
+            <div class="lang-selector">
+                EN |
+                <a href="/index_ru.html">RU</a>
+            </div>
             <h1 class="logo-header">
                 <span class="is-primary">A</span>ben
                 <span class="is-primary">A</span>yazbayev
             </h1>
-            <p class="logo-subheader">
-                <a class="fab fa-github"></a>
-                <a class="fab fa-skype"></a>
-                <a href=mailto:{{author.email}} class="fas fa-at"></a>
-            </p>
+            <div>
+                <p class="logo-subheader">
+                    <a href="https://github.com/{{author.github}}" class="fab fa-github"></a>
+                    <a href="skype:{{author.skype}}" class="fab fa-skype"></a>
+                    <a href="mailto:{{author.email}}" class="fas fa-at"></a>
+                    <a href="{{author.pdf_link_en}}" class="fas fa-file-pdf"></a>
+                </p>
+            </div>
         </div>
     </header>
 
@@ -47,8 +55,13 @@
             {% for x in projects %}
 
             <article class="cv-item-container clearfix">
+                {% if !!x.link.length %}
+                <a href="{{x.link}}">
+                    <h2 class="cv-item-header">{{x.name}}</h2>
+                </a>
+                {% else %}
                 <h2 class="cv-item-header">{{x.name}}</h2>
-
+                {% endif %}
                 <aside class="cv-item-sidebar">
                     <p class="cv-item-date">{{x.startDate|date("M, Y")}} - {{x.endDate|date("M, Y")}}</p>
                     <p class="cv-item-keywords">{{x.keywords}}</p>
@@ -56,8 +69,8 @@
 
                 <section class="cv-item-content">
                     <p>
-                        Sources: <a href={{x.githubLink}}>{{x.githubLink}}</a>
-                        Link: <a href={{x.link}}>{{x.link}}</a>
+                        <strong>Sources:</strong>
+                        <a href={{x.githubLink}}>{{x.githubLink}}</a>
                     </p>
                     <p>
                         {{x.content}}
@@ -90,13 +103,10 @@
 
             <h1 class="section-header">Hobbies</h1>
 
-            {% for hobby in hobbies %}
-
             <article class="cv-item-container">
-
                 <section class="cv-item-content">
                     <p>
-                        {{hobby}}
+                        {{hobbies}}
                     </p>
                 </section>
             </article>
@@ -105,7 +115,7 @@
 
     <footer>
         <div class="container">
-            <p>Copyright 2018</p>
+            <p>{{fullName}}, Copyright 2018</p>
         </div>
     </footer>
 

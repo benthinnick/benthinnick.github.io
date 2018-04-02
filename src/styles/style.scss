@@ -13,8 +13,18 @@ h6 {
     font-family: $secondary-font;
 }
 
+a {
+    color: $primary-color;
+    &:visited {
+        color: darken($primary-color, 10%);
+    }
+    &:hover {
+        color: lighten($primary-color, 10%);
+    }
+}
+
 .container {
-    width: 60%;
+    width: 70%;
     margin: auto;
     overflow: hidden;
 }
@@ -47,16 +57,13 @@ footer {
     font-size: 24px;
 }
 
-.main {}
-
 .section-header {
     margin-left: $sidebar-width;
 }
 
-.cv-item-container {}
-
 .cv-item-content {
     margin-left: $sidebar-width;
+    text-align: justify;
 }
 
 .cv-item-header {
@@ -83,4 +90,34 @@ footer {
     content: "";
     clear: both;
     display: table;
+}
+
+.logo-subheader {
+    a {
+        text-decoration: none;
+    }
+}
+
+.lang-selector {
+    float: right;
+    margin-top: 5px;
+}
+
+@media(max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+    .cv-item-sidebar {
+        float: none;
+        width: 100%;
+    }
+    .cv-item-content {
+        margin-left: 0;
+    }
+    .cv-item-header {
+        margin-left: 0;
+    }
+    .section-header {
+        margin-left: 0;
+    }
 }

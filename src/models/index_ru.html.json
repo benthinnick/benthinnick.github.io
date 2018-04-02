@@ -1,7 +1,12 @@
 {
     "author": {
-        "firstName": "Aben",
-        "lastName": "Ayazbayev"
+        "firstName": "Абен",
+        "lastName": "Аязбаев",
+        "email": "aayazbayev93@gmail.com",
+        "github": "benthinnick",
+        "skype": "benthinnick",
+        "pdf_link_en": "/pdf/AbenAyazbayev_en.pdf",
+        "pdf_link_ru": "/pdf/AbenAyazbayev_ru.pdf"
     },
     "keySkills": {
         "skills": [],
@@ -9,27 +14,42 @@
     },
     "projects": [
         {
+            "name": "PieShop",
+            "content": "Веб-приложение вымышленной пекарни, сделано на основе двух курсов Pluralsight. Построено на фреймворке ASP .NET Core 2.0 MVC. Приложение дает возможность заказывать пироги, оставлять рецензии, имеет разделение пользователей по ролям (администратор, пользователь). Использовал Entity Framework Core для связи сущностей с базой данных. Postgres для баз данных, Serilog как логгер, JQuery для client-side, xUnit для тестов и сам фреймворк для валидации моделей, кэширования и ауторизации.",
+            "keywords": "ASP .NET Core 2 MVC, Identity, EntityFramework Core, Javascript, JQuery, Gulp, Postgres, HTML5, CSS3",
+            "startDate": "2018-03-05T18:25:43.511Z",
+            "endDate": "2018-03-22T18:25:43.511Z",
+            "githubLink": "https://github.com/benthinnick/PieShop",
+            "link": "http://pieshop.aben.space/"
+        },
+        {
             "name": "MonopolyBot",
-            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend, lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse quis libero molestie, sollicitudin ex ac, hendrerit leo.",
-            "keywords": "keywords",
-            "startDate": "",
-            "endDate": "",
-            "githubLink": "",
+            "content": "Бот для платформы Telegram, написанный на C# с помощью библиотеки Telegram.Bot, позволяет играть «Монополию» в чате Telegram. Для рендеринга игры использовал библиотеку ImageSharp. Также использованы: Autofac для инверсии управления, NUnit для тестов, NLog как  логгер.",
+            "keywords": ".NET Core 2, Autofac, Telegram.Bot",
+            "startDate": "2018-02-21T18:25:43.511Z",
+            "endDate": "2018-03-05T18:25:43.511Z",
+            "githubLink": "https://github.com/benthinnick/mpoly",
             "link": ""
         },
         {
-            "name": "",
-            "content": "",
-            "keywords": "",
-            "startDate": "",
-            "endDate": ""
+            "name": "Ticket-Monster",
+            "content": "Single-Page Java веб-приложение на WildFly, использовал Hibernate, Maven, Backbone.js, JQuery, Underscore.",
+            "keywords": "WildFly, Java EE, JQuery, Backbone, Underscore",
+            "startDate": "2017-10-15T00:00:00.000Z",
+            "endDate": "2018-11-15T00:00:00.000Z",
+            "githubLink": "https://github.com/benthinnick/ticket-monster",
+            "link": ""
         }
     ],
     "education": [
         {
-            "name": "ENU"
+            "degree": {
+                "name": "Бакалавр международных знаний",
+                "place": "Евразийский Национальный Университет им. Л. Н. Гумилева",
+                "startDate": "2013-10-01T00:00:00.000Z",
+                "endDate": "2017-06-30T00:00:00.000Z"
+            }
         }
     ],
-    "hobbies": [],
-    "additionalInfo": []
+    "hobbies": "Литература, 3D Моделирование (Blender)"
 }

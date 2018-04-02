@@ -26,3 +26,7 @@ gulp.task("pages", () => {
         .pipe(swig())
         .pipe(gulp.dest("./"));
 });
+
+gulp.task("pages:watch", () => {
+    gulp.watch("./src/views/*.html", ["pages"]);
+});

@@ -1,0 +1,35 @@
+{
+    "author": {
+        "firstName": "Aben",
+        "lastName": "Ayazbayev"
+    },
+    "keySkills": {
+        "skills": [],
+        "additional skills": []
+    },
+    "projects": [
+        {
+            "name": "MonopolyBot",
+            "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed vel leo lorem. Duis varius eu orci non varius. Fusce vel ligula tortor. Aenean blandit sapien tellus, at feugiat nisi venenatis eget. Fusce pharetra dignissim lorem vitae semper. Duis eleifend lectus odio, ut convallis felis tempus porttitor. Praesent eleifend, lacus vitae mattis ultricies, libero quam suscipit dui, at suscipit felis orci eget arcu. Sed a est at nulla viverra ornare. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Suspendisse in ex felis. Proin at eleifend nisl, nec auctor enim. Suspendisse quis libero molestie, sollicitudin ex ac, hendrerit leo.",
+            "keywords": "keywords",
+            "startDate": "",
+            "endDate": "",
+            "githubLink": "",
+            "link": ""
+        },
+        {
+            "name": "",
+            "content": "",
+            "keywords": "",
+            "startDate": "",
+            "endDate": ""
+        }
+    ],
+    "education": [
+        {
+            "name": "ENU"
+        }
+    ],
+    "hobbies": [],
+    "additionalInfo": []
+}

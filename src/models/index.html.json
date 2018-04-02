@@ -1,6 +1,52 @@
 {
     "author": {
         "firstName": "Aben",
-        "lastName": "Ayazbayev"
-    }
+        "lastName": "Ayazbayev",
+        "email": "aayazbayev93@gmail.com"
+    },
+    "keySkills": {
+        "skills": [],
+        "additional skills": []
+    },
+    "projects": [
+        {
+            "name": "PieShop",
+            "content": "A fictional pie shop web-application, based on two Pluralsight courses, built upon ASP .NET Core 2.0 MVC framework. Allows ordering pies, leaving reviews, allows multiple roles including administrative roles. I used Entity Framework Core for mapping entities to database. Postgres as database, Serilog as a logger, JQuery for the client-side, internal model-binding, authorization, caching, xUnit for tests.",
+            "keywords": "ASP .NET Core 2 MVC, Identity, EntityFramework, JQuery",
+            "startDate": "2018-03-05T18:25:43.511Z",
+            "endDate": "2018-03-22T18:25:43.511Z",
+            "githubLink": "https://github.com/benthinnick/PieShop",
+            "link": "http://pieshop.aben.space/"
+        },
+        {
+            "name": "MonopolyBot",
+            "content": "A bot for Telegram platform, developed in C# using Telegram.Bot library, allows to play «Monopoly» game in Telegram chat. To render in-game players on the monopoly board I used ImageSharp library. Also following technologies were used: Autofac as IoC Container, NUnit as unit-testing framework, NLog as a logger.",
+            "keywords": ".NET Core 2, Autofac, Telegram.Bot",
+            "startDate": "2018-02-21T18:25:43.511Z",
+            "endDate": "2018-03-05T18:25:43.511Z",
+            "githubLink": "https://github.com/benthinnick/mpoly",
+            "link": ""
+        },
+        {
+            "name": "Ticket-Monster",
+            "content": "A single-page WildFly based Java web-application, using Hibernate, Maven, Backbone.js, JQuery, Underscore.",
+            "keywords": "WildFly, Java EE, JQuery, Backbone, Underscore",
+            "startDate": "2017-10-15T00:00:00.000Z",
+            "endDate": "2018-11-15T00:00:00.000Z",
+            "githubLink": "",
+            "link": ""
+        }
+    ],
+    "education": [
+        {
+            "degree":
+            {
+                "name": "Bachelor of Arts in International Relations",
+                "place": "L. N. Gumilyov Eurasian National University",
+                "startDate": "2013-10-01T00:00:00.000Z",
+                "endDate": "2017-06-30T00:00:00.000Z"
+            }
+        }
+    ],
+    "hobbies": [ "3D Modelling"]
 }

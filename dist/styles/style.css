@@ -2,7 +2,12 @@ body {
   font-family: "El Messiri", serif;
   background-color: whitesmoke; }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Cuprum", sans-serif; }
 
 .container {
@@ -53,3 +58,8 @@ footer {
 
 .cv-item-keywords {
   color: gray; }
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table; }

@@ -1,11 +1,15 @@
 @import "_variables";
-
 body {
     font-family: $primary-font;
     background-color: $light;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font-family: $secondary-font;
 }
 
@@ -17,7 +21,6 @@ h1, h2, h3, h4, h5, h6 {
 
 header {
     min-height: 70px;
-
     .container {
         border-bottom: 1px solid darken($light, 10%);
         text-align: center;
@@ -34,25 +37,23 @@ footer {
     color: $primary-color;
 }
 
-.logo-header{
+.logo-header {
     font-size: 48px;
     margin-bottom: 10px;
 }
 
-.logo-subheader{
+.logo-subheader {
     margin: 5px;
     font-size: 24px;
 }
 
-.main {
-}
+.main {}
 
 .section-header {
     margin-left: $sidebar-width;
 }
 
-.cv-item-container {
-}
+.cv-item-container {}
 
 .cv-item-content {
     margin-left: $sidebar-width;
@@ -76,4 +77,10 @@ footer {
 
 .cv-item-keywords {
     color: lighten($black, 50%);
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
 }
